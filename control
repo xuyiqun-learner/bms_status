@@ -1,0 +1,7 @@
+Package: unity-drive-bms-status
+Version: 0.0.1
+Maintainer: xuyiqun <xchu [at] unity-drive.com>
+Description: bms_status serial driver of modbus
+Architecture: amd64
+Depends: libmodbus-dev
+

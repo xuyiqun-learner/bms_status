@@ -1,0 +1,13 @@
+<launch>
+    <node name="bms_status" pkg="bms_status" type="bms_rtu_node" output="screen">
+        <!-- Serial port setting  -->
+        <param name="port" value="/dev/ttyS1"/>
+        <param name="baudrate" value="9600"/> <!--与上位机软件设定的波特率一致，否则无数据输出-->
+        <param name="parity" value="0"/>
+
+        <!-- ROS topic setting  -->
+        <param name="frame_id" value="/bms"/>
+        <param name="bms_topic" value="/bms/battery_data"/>
+
+    </node>
+</launch>
